@@ -11,7 +11,9 @@ public int compare(Object o1, Object o2){
 return o1.getSomething().compareTo(o2.getSomething());
 }
 
-
+Comparable in Java is used to implement natural ordering of object. 
+In Java API String, Date and wrapper classes implements Comparable interface.
+Its always good practice to override compareTo() for value objects.
 Comparable<T>
 @Override
 public int compareTo(Object){
